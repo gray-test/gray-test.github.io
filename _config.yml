@@ -1,0 +1,19 @@
+# Site settings
+title: Gray Olson
+email: gray@grayolson.com
+description: > # this means to ignore newlines until "baseurl:"
+  Portfolio and blog of Gray Olson, a 2d and 3d artist, web developer, 
+  and photographer. He is curently attending Brophy College Preparatory
+  and plans to study computer science or art in college.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://grayolson.com" # the base hostname & protocol for your site
+twitter_username: termhn
+github_username:  termhn
+instagram_username: grayolson
+flickr_username: grayolson
+
+# Build settings
+markdown: kramdown
+
+url: https://grayolson.com/
+enforce_ssl: grayolson.com

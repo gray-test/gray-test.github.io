@@ -1,0 +1,30 @@
+---
+layout: null
+title: p5.Asteroids
+permalink: /asteroids/
+---
+
+<head>
+ <title>{% if page.pagetitle %}{{site.title}} | {{page.pagetitle}}{% elsif page.title %}{{ site.title}} | {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+ <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+ <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+ <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}"/>
+ <link rel="stylesheet" type="text/css" href="{{ "/public/asteroids.css" | prepend: site.baseurl }}" />
+ <!--[if lt IE 10]>
+    <script type="text/javascript">alert("Your browser does not support the canvas tag.");</script>
+ <![endif]-->
+ <script src="{{ "/public/js/p5/p5.js" | prepend: site.baseurl }}"></script>
+</head>
+
+<body>
+  <script language="javascript" type="text/javascript" src="{{ "/public/js/sketch.js" | prepend: site.baseurl }}"></script>
+  <script language="javascript" type="text/javascript" src="{{ "/public/js/ship.js" | prepend: site.baseurl }}"></script>
+  <script language="javascript" type="text/javascript" src="{{ "/public/js/asteroid.js" | prepend: site.baseurl }}"></script>
+  <script language="javascript" type="text/javascript" src="{{ "/public/js/quadtree.js" | prepend: site.baseurl }}"></script>
+  <script language="javascript" type="text/javascript" src="{{ "/public/js/quaternion.js" | prepend: site.baseurl }}"></script>
+  <script language="javascript" type="text/javascript" src="{{ "/public/js/circle.js" | prepend: site.baseurl }}"></script>
+  <script language="javascript" type="text/javascript" src="{{ "/public/js/collision.js" | prepend: site.baseurl }}"></script>
+  <script language="javascript" type="text/javascript" src="{{ "/public/js/laser.js" | prepend: site.baseurl }}"></script>
+  <script language="javascript" type="text/javascript" src="{{ "/public/js/score.js" | prepend: site.baseurl }}"></script>
+</body>
+</html>
